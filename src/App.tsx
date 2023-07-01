@@ -1,21 +1,25 @@
-import "./App.scss";
+import styles from "./App.module.scss";
 import { Phone } from "./components/Phone";
+import dock from "./assets/dock.png";
 import icons from "./assets/icons.png";
 import statusBar from "./assets/status-bar.png";
 import { Background } from "./components/Background";
-import { Dock } from "./components/Dock";
 
 export const App = () => {
   return (
     <Phone>
       <Background />
-      <div className="statusbar">
+      <div className={styles.statusBar}>
         <img src={statusBar} />
       </div>
-      <div className="icons">
+      <div className={styles.icons}>
         <img src={icons} />
       </div>
-      <Dock />
+      <div className={styles.dock}>
+        <a href="/lock">
+          <img src={dock} />
+        </a>
+      </div>
     </Phone>
   );
 };

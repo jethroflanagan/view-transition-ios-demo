@@ -14,10 +14,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation-duration: 0.5s;
-}
 
 body {
   margin: 0;

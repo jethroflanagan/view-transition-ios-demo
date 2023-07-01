@@ -1,9 +1,10 @@
-import styles from "./LockScreen.scss";
-import actions from "./assets/lock-actions.png";
+import wallpaper from "./assets/wallpaper.png";
 import clock from "./assets/lock-clock.png";
+import actions from "./assets/lock-actions.png";
 import statusBar from "./assets/status-bar.png";
-import { Background } from "./components/Background";
+import styles from "./LockScreen.module.scss";
 import { Phone } from "./components/Phone";
+import { Background } from "./components/Background";
 
 export const LockScreen = () => {
   return (
