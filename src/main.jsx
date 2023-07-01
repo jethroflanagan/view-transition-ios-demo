@@ -4,6 +4,7 @@ import { App } from "./App";
 import "./index.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { LockScreen } from "./LockScreen";
+import { Widget } from './Widget';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -12,6 +13,10 @@ const router = createBrowserRouter([
   {
     path: "/lock",
     element: <LockScreen />,
+  },
+  {
+    path: "/widget",
+    element: <Widget />,
   },
 ]);
 

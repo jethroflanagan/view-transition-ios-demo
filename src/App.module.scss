@@ -5,7 +5,15 @@
   left: 0;
 }
 
-.icons {
+.home {
+  display: flex;
   margin: 12px;
+  align-items: flex-start;
+  gap: 26px;
   flex-grow: 1;
+  view-transition-name: home;
+}
+
+.widgetIcon {
+  view-transition-name: widget;
 }
