@@ -1,10 +1,10 @@
-import wallpaper from "./assets/wallpaper.png";
-import clock from "./assets/lock-clock.png";
-import actions from "./assets/lock-actions.png";
-import statusBar from "./assets/status-bar.png";
 import styles from "./LockScreen.module.scss";
-import { Phone } from "./components/Phone";
+import actions from "./assets/lock-actions.png";
+import clock from "./assets/lock-clock.png";
+import statusBar from "./assets/status-bar.png";
+import { AnimatedLink } from './components/AnimatedLink';
 import { Background } from "./components/Background";
+import { Phone } from "./components/Phone";
 
 export const LockScreen = () => {
   return (
@@ -16,9 +16,11 @@ export const LockScreen = () => {
       <div className={styles.clock}>
         <img src={clock} />
       </div>
-      <div className={styles.actions}>
-        <img src={actions} />
-      </div>
+      <AnimatedLink href="/">
+        <div className={styles.actions}>
+          <img src={actions} />
+        </div>
+      </AnimatedLink>
     </Phone>
   );
 };
