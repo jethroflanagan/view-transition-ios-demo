@@ -34,14 +34,13 @@
 }
 .subtitle {
   view-transition-name: widget-subtitle;
-  transform: translate(0px, 80px);
 }
 
 .icon {
   view-transition-name: widget-icon;
   position: absolute;
   bottom: 0;
-  transform: translate(-10px, 50%);
+  transform: translate(280px, 50%);
 }
 
 .container {
