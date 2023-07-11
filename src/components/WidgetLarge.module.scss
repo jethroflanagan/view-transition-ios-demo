@@ -1,0 +1,52 @@
+.widgetLarge {
+  position: relative;
+  display: flex;
+  padding: 18px;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  z-index: 1;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  view-transition-name: widget-background;
+}
+
+.section,
+.title,
+.subtitle {
+  object-fit: none;
+}
+
+.section {
+  view-transition-name: widget-section;
+}
+
+.title {
+  view-transition-name: widget-title;
+  margin-left: -18px;
+}
+.subtitle {
+  view-transition-name: widget-subtitle;
+  transform: translate(0px, 80px);
+}
+
+.icon {
+  view-transition-name: widget-icon;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-10px, 50%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}

@@ -1,0 +1,59 @@
+.widgetSmall {
+  position: relative;
+  display: flex;
+  padding: 18px;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  view-transition-name: widget-background;
+}
+
+.section,
+.title,
+.subtitle {
+  object-fit: none;
+}
+
+.section {
+  view-transition-name: widget-section;
+}
+
+.title {
+  // view-transition-name: widget-title;
+}
+.subtitle {
+  view-transition-name: widget-subtitle;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.icon {
+  view-transition-name: widget-icon;
+}
+.mountains {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  view-transition-name: mountains;
+}
+
+::view-transition-group(widget-icon) {
+  z-index: 1;
+}
+::view-transition-group(widget-subtitle) {
+  z-index: 1;
+}

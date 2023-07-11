@@ -6,6 +6,7 @@ import { Background } from "./components/Background";
 import { Dock } from './components/Dock';
 import { Phone } from "./components/Phone";
 import { StatusBar } from './components/StatusBar';
+import { WidgetSmall } from './components/WidgetSmall';
 
 export const App = () => {
   return (
@@ -14,7 +15,8 @@ export const App = () => {
       <Background />
       <div className={styles.home}>
         <AnimatedLink href="/widget">
-          <img src={widget} className={styles.widgetIcon} />
+          <WidgetSmall />
+          {/* <img src={widget} className={styles.widgetIcon} /> */}
         </AnimatedLink>
         <img src={icons} />
       </div>
