@@ -7,3 +7,8 @@
 .mountains {
   view-transition-name: mountains;
 }
+
+.statusContainer {
+  position: absolute;
+  z-index: 2;
+}

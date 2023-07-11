@@ -1,4 +1,8 @@
 .statusBar {
   position: relative;
   z-index: 1;
+  view-transition-name: status;
+}
+::view-transition-group(status) {
+  z-index: 1;
 }
